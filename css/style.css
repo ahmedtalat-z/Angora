@@ -1,0 +1,576 @@
+
+/* Global */
+:root{
+    --rose:#f25454
+}
+
+.special-heading {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.special-heading h2 {
+    position: relative;
+}
+
+.special-heading p {
+    color: #999;
+    font-size: 22px;
+}
+
+.special-heading h2::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.special-heading h2 span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(9px);
+    -webkit-transform: translateX(-50%) translateY(9px);
+    -moz-transform: translateX(-50%) translateY(9px);
+    -ms-transform: translateX(-50%) translateY(9px);
+    -o-transform: translateX(-50%) translateY(9px);
+    font-size: 90px;
+    color: #99999931;
+    z-index: -1;
+}
+
+.special-heading:hover h2::after {
+    width: 60px;
+}
+
+/* < !--=================Start nav ==================--> */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbar-nav .nav-link.active{
+color: var(--rose);
+}
+.nav-link {
+    color: #fff;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--rose);
+}
+.fixed-nav{
+    display: none;
+}
+
+/* < !--=================End nav ==================--> */
+/* < !--=================Start Landing==================--> */
+.landing .carousel-inner img{
+    min-height: 100vh;
+    min-width: 150vh;
+}
+.landing button{
+    position: absolute;
+    border: 1px solid white;
+    width:50px;
+    height: 50px;
+    left: 0;
+    opacity: 1;
+    transition:all 1s ;
+    -webkit-transition:all 1s ;
+    -moz-transition:all 1s ;
+    -ms-transition:all 1s ;
+    -o-transition:all 1s ;
+}
+.landing  .carousel-control-prev{
+    top: 50%;
+    border-top-right-radius:3px;
+    transform: translateY(-73px);
+    -webkit-transform: translateY(-73px);
+    -moz-transform: translateY(-73px);
+    -ms-transform: translateY(-73px);
+    -o-transform: translateY(-73px);
+    border-bottom: 0;
+    border-left: 0;
+}
+.landing .carousel-control-next{
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-bottom-right-radius:3px;
+    border-left: 0;
+}
+.landing .carousel-control-prev:hover .arrow1   {
+    transform:translateX(0px);
+    -webkit-transform:translateX(0px);
+    -moz-transform:translateX(0px);
+    -ms-transform:translateX(0px);
+    -o-transform:translateX(0px);
+}
+.landing .carousel-control-next:hover .arrow2   {
+    transform:translateX(0px);
+    -webkit-transform:translateX(0px);
+    -moz-transform:translateX(0px);
+    -ms-transform:translateX(0px);
+    -o-transform:translateX(0px);
+}
+
+
+
+.landing  .arrow1,.landing .arrow2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(-51px);
+    -webkit-transform: translateX(-51px);
+    -moz-transform: translateX(-51px);
+    -ms-transform: translateX(-51px);
+    -o-transform: translateX(-51px);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.landing  .arrow1 div{
+    width: 21px;
+    height: 21px;
+    transform: translateX(6px) rotate(-45deg);
+    border: 3px solid var(--rose);
+    border-right: 0;
+    border-bottom: 0;
+    -webkit-transform: translateX(6px) rotate(-45deg);
+    -moz-transform: translateX(6px) rotate(-45deg);
+    -ms-transform: translateX(6px) rotate(-45deg);
+    -o-transform: translateX(6px) rotate(-45deg);
+}
+.landing  .arrow2 div {
+    width: 21px;
+    height: 21px;
+    transform: translateX(-6px) rotate(135deg);
+    border: 3px solid var(--rose);
+    border-right: 0;
+    border-bottom: 0;
+    -webkit-transform: translateX(-6px) rotate(135deg);
+    -moz-transform: translateX(-6px) rotate(135deg);
+    -ms-transform: translateX(-6px) rotate(135deg);
+    -o-transform: translateX(-6px) rotate(135deg);
+}
+.landing .carosel-head{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.landing .carosel-head .container.text{
+    width: 50%;
+    font-size: 73px;
+    font-weight: 700;
+}
+
+.animation{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+}
+.landing .animation a{
+    display: block;
+    width: 28px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.landing .animation a span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    transform: translate(8px,8px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(8px,8px);
+    -moz-transform: translate(8px,8px);
+    -ms-transform: translate(8px,8px);
+    -o-transform: translate(8px,8px);
+    transition: all 0.5s;
+    animation-name: move;
+    -webkit-animation: move;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+@keyframes move {
+    0%{}
+    80%{ transform:translate(8px,25px); -webkit-transform:translate(8px,25px); -moz-transform:translate(8px,25px); -ms-transform:translate(8px,25px); -o-transform:translate(8px,25px); }
+    100%{opacity: 0;}
+}
+.landing .animation a:hover{
+    border-color: var(--rose);
+}
+.landing .animation a:hover span{background-color: var(--rose);}
+/* < !--=================End Landing==================--> */
+/* < !--=================Start About==================--> */
+
+.about .row p{
+    color: #666;
+    font-size: 18px;
+}
+.about .progress-bar{
+    background-color: var(--rose);
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+}
+.about .prog div{position: relative;}
+.about .progress{
+    height: 6px;
+}
+.about .row .pers1{
+    position: absolute;
+    left: 80%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.about .row .pers2{
+    position: absolute;
+    left: 95%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.about .row .pers3{
+    position: absolute;
+    left: 85%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.about .row .pers4{
+    position: absolute;
+    left: 70%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+/* < !--=================End About==================--> */
+/* < !--=================Start Team==================--> */
+.team{
+    min-height: 100vh;
+}
+.team .container .layer{
+    position: relative;
+}
+.team .container .layer span a{
+    color:white;
+}
+.team .container .layer span {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    width: 100%;
+        height: 100%;
+}
+
+.team .main .layer div  img{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.team .main:hover .layer div img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.team .main:hover  h4{
+    color: var(--rose);
+}
+.team .main:hover .layer span{
+    
+    background-color: #f25454a9;
+    opacity: 1;
+}
+.team .container  .contact-btn{
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: var(--rose);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.team .container  .contact-btn:hover {
+    background-color:#f25454a5 ;
+}
+/* .team .container .bttn{
+    margin-left: 100px;
+    margin-bottom: 100px;
+} */
+
+/* < !--=================End Team==================--> */
+/* < !--=================Start Projects==================--> */
+/* < !--=================End Projects==================--> */
+/* < !--=================Start Services==================--> */
+.services{min-height: 100vh;}
+.services .container .row .col div{position: relative;}
+.services .container .row .col span{
+    color: var(--rose);
+    font-size: 27px;
+    position: absolute;
+    top: 0;
+    left: -17px;
+    transform: translateX(-100%)translateY(-10px);
+    -webkit-transform: translateX(-100%)translateY(-10px);
+    -moz-transform: translateX(-100%)translateY(-10px);
+    -ms-transform: translateX(-100%)translateY(-10px);
+    -o-transform: translateX(-100%)translateY(-10px);
+}
+.services .container .text:hover h4{
+    color: var(--rose);
+}
+/* < !--=================End Services==================--> */
+/* < !--=================Start Client==================--> */
+.client .car{
+    padding-top: 160px;
+}
+.carousel-indicators [data-bs-target]{
+    text-indent: unset;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.carousel-indicators{
+    bottom: 100%;
+}
+.client .car .textt h3{
+    font-size: 18px;
+}
+.client .car .textt  p{color: #666}
+.client .car .textt div p{
+    font-size: 24px;
+    font-weight:400 ;
+}
+.client .car .textt .container{
+    width: 650px;
+}
+
+/* < !--=================End Client==================--> */
+/* < !--=================Start Contact==================--> */
+.contact{min-width: 100vh !important;}
+.contact .container .address,.contact .container .phone ,.contact .container .email{
+    padding: 10px 60px;
+}
+.contact .container .address:hover h4,
+.contact .container .phone:hover h4,
+.contact .container .email:hover h4{color: var(--rose);}
+.contact .container .address,
+.contact .container .phone{
+    border-bottom: 1px solid #66666638;
+}
+.contact .container .row .col div{
+    position: relative;
+}
+.contact .container .row .col div span{
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 0px ;
+    color: var(--rose);
+}
+.contact .container .email a{
+    text-decoration: none;
+    color: #666;
+    
+}
+.contact .container .field{
+    width: 100%;
+}
+.contact .container .field input,.contact .container .field textarea{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 2px solid #6666667d;
+    border-radius: 4px;
+    padding-left: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.contact .container .field textarea{
+    height: 110px;
+}
+.contact .container button{
+    color: white;
+    background-color: var(--rose);
+    opacity: 1;
+}
+.contact .container .field input:focus,
+.contact .container .field textarea:focus{
+    outline-color: var(--rose);
+}
+/* < !--=================End Contact==================--> */
+
+/* footer */
+footer{
+    width: 100%;
+    min-height: 400px;
+    color: #666;
+    font-weight: 500;
+}
+footer .layer{
+    width: 100%;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.86);
+    position: relative;
+}
+
+footer .layer .img{
+    width: 100%;
+        height:100%;
+        background: url('../images/dotted-map.png') center ;
+        background-size: contain;
+}
+footer .layer .container a{color: #747474;}
+footer .layer .container a:hover{color: var(--rose)}
+
+footer .layer .container .pop .text-white:hover {
+    color: var(--rose) !important;
+    border-color: var(--rose) !important;
+}
+
+footer .layer .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f254549a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+footer .layer .home div{
+    width: 15px;
+    height: 15px;
+    border: 4px solid white;
+    border-bottom: 0;
+    border-right: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+footer .layer .home:hover{
+    background-color: var(--rose);
+}
+/* copyright */
+.copyright{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.91);
+}
+.copyright div a{
+    color: white;
+}
+.copyright div a:hover{
+    color: var(--rose);
+}
+.copyright p{color: #fff;}
+.copyright p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.copyright p a:hover{
+    color: var(--rose);
+}
